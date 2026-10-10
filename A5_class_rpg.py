@@ -1,6 +1,11 @@
-import random as rand
-class rpg_char:
-    def __init__(self, name, race, class_name, xp, level):
+'''
+本次作業主要練習 Python 物件導向程式設計（Object-Oriented Programming），包含 Class、Inheritance（繼承）與 Encapsulation（封裝）。
+自訂日常中會出現的兩個class使兩者做出其對應的動作。例如：小狗.汪汪叫()
+'''
+#I got absolutely carried away and I haven't even played DnD before. Don't take mine as the correct answer because this is way over the required level.
+import random as rand #"random" used like dice. Here I use randint(a,b), which generated random integers from a to b.
+class rpg_char: #the "good guy"
+    def __init__(self, name, race, class_name, xp, level): #self is a required function. 
         self.name=name
         self.race=race
         self.class_name=class_name
@@ -36,7 +41,7 @@ class rpg_char:
         print(f"{self.name} dealt {damage} damage to the enemy.")
         return damage
 
-class rpg_bbeg:
+class rpg_bbeg: #the "big bad evil guy"
     def __init__(self, name, race, class_name, hp):
         self.name=name
         self.race=race
