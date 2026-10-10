@@ -10,14 +10,14 @@
 '''
 
 password="python123"
-for i in range(3):
+for i in range(3): #will run the code 3 times, as in 3 input chances
     pwdinput=input()
     if pwdinput==password:
         print("Login successful")
         break
-    elif len(pwdinput)<6:
+    elif len(pwdinput)<6: #len() is for calculating the length of the function
         print("Password too short")
     else:
         print("Incorrect password")
-else:
+else: #Format is important kids, remember to line this one up with the "for i in range(3):".
     print("Account locked")
