@@ -1,3 +1,4 @@
+#Installing Pillow really gave me a hard time. I still have no idea how I pulled it off.
 import PIL
 from PIL import Image
 im = Image.open("/Users/huangzhehao/Desktop/TRUST ME I'm an Engineer/Python/Lenna.jpg")
